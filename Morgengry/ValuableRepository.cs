@@ -15,14 +15,21 @@ namespace Morgengry
         public double GetTotalValue()
         {
             double totalValue = 0;
-            foreach (totalValue item in collection)
-            {
-
-            }
             for (int i = 0; i < valueables.Count; i++)
             {
-                if (valueables == Course course)
-                totalValue += IValuable.GetValue(valueables[i]);
+                if (valueables[i] is Course course)
+                {
+                    totalValue += course.GetValue(valueables[i]);
+                }
+                else if (valueables[i] is Book book)
+                {
+                    totalValue += book.GetValue(valueables[i]);
+                }
+                else if (valueables[i] is Amulet amulet)
+                {
+                    totalValue += amulet.GetValue(valueables[i]);
+                }
+
             }
             return totalValue;
         }
