@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Course
+    public class Course : IValuable
     {
         private string name;
         private int durationInMinutes;

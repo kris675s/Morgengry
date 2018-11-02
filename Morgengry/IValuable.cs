@@ -8,7 +8,7 @@ namespace Morgengry
 {
     interface IValuable
     {
-        double Value
+        double value
         {
             get; set;            
         }

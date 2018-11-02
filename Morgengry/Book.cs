@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Book : Merchandise
+    public class Book : Merchandise, IValuable
     {
         private string title;
         private double price;

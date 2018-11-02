@@ -13,7 +13,7 @@ namespace Morgengry
     */
     public enum Level { low, medium, high }
 
-    public class Amulet : Merchandise
+    public class Amulet : Merchandise, IValuable
 
     /*
     for at lave et mellemled hvor vi sikre at man ikke piller ved amulet classens metoder
