@@ -10,7 +10,7 @@ namespace Morgengry
     {
         double value
         {
-            get; set;            
+            get; set;          
         }
     }
 }

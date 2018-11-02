@@ -16,6 +16,7 @@ namespace Morgengry
             get => title;
             set { title = value; }
         }       
+
         public double Price
         {
             get => price;
@@ -32,10 +33,19 @@ namespace Morgengry
         {
 
         }
+
+        public double GetValue()
+        {
+            double price = 0;
+            price = Price;
+            return price;
+        }
+
         public Book(string item) : this(item, "", 0)
         {
 
         }
+
         public override string ToString()
         {
             return ("ItemId: "+ ItemId+", "+"Title: "+ Title+", "+"Price: "+ Price);

@@ -28,6 +28,14 @@ namespace Morgengry
             set { courseHourValue = value; }
         }
 
+        public double GetValue()
+        {
+             double DurMin = DurationInMinutes;
+             double hoursInitialized = Math.Ceiling(DurMin / 60);
+             double Price = hoursInitialized * CourseHourValue;
+             return Price;
+        }
+
         public Course(string name, int durationInMinutes)
         {
             Name = name;

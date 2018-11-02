@@ -19,15 +19,15 @@ namespace Morgengry
             {
                 if (valueables[i] is Course course)
                 {
-                    totalValue += course.GetValue(valueables[i]);
+                    totalValue += course.GetValue();
                 }
                 else if (valueables[i] is Book book)
                 {
-                    totalValue += book.GetValue(valueables[i]);
+                    totalValue += book.GetValue();
                 }
                 else if (valueables[i] is Amulet amulet)
                 {
-                    totalValue += amulet.GetValue(valueables[i]);
+                    totalValue += amulet.GetValue();
                 }
 
             }

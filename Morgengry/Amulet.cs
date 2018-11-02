@@ -32,6 +32,26 @@ namespace Morgengry
             get => design;
             set { design = value; }
         }
+
+        public double GetValue()
+        {
+            double price = 0;
+            if (Quality == Level.low)
+            {
+                price = LowQualityValue;
+            }
+            if (Quality == Level.medium)
+            {
+                price = MediumQualityValue;
+            }
+            if (Quality == Level.high)
+            {
+                price = HighQualityValue;
+            }
+            return price;
+
+        }
+
         public Level Quality
         {
             get => quality;
