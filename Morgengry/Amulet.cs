@@ -23,6 +23,9 @@ namespace Morgengry
     {
         private string design;
         private Level quality;
+        private static double lowQualityValue = 12.5;
+        private static double mediumQualityValue = 20.0;
+        private static double highQualityValue = 27.5;
 
         public string Design
         {
@@ -33,6 +36,23 @@ namespace Morgengry
         {
             get => quality;
             set { quality = value; }
+        }
+
+        public static double LowQualityValue
+        {
+            get => lowQualityValue;
+            set { lowQualityValue = value; }
+        }
+
+        public static double MediumQualityValue
+        {
+            get => mediumQualityValue;
+            set { mediumQualityValue = value; }
+        }
+        public static double HighQualityValue
+        {
+            get => highQualityValue;
+            set { highQualityValue = value; }
         }
         /*
         main constructor

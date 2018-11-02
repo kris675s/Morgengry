@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
 namespace Morgengry
 {
     public class Utility
@@ -66,7 +66,7 @@ namespace Morgengry
             double hoursInitialized = Math.Ceiling(DurMin / 60);
             double Price = hoursInitialized * CourseHourValue;
             return Price;
-        }
+        }*/
         /*public static double GetValueOfBook(Book book)
         {
             double price = book.Price;
@@ -85,6 +85,7 @@ namespace Morgengry
                 price = 27.5;
             }
             return price;
-        }*/
+        }
     }
 }
+*/

@@ -18,7 +18,7 @@ namespace Morgengry
         {
             return merchandises.Find(x => x.ItemId == itemId);
         }
-        public double GetTotalValue()
+        /*public double GetTotalValue()
         {
             double totalValue = 0;
             for (int i = 0; i < merchandises.Count; i++)
@@ -26,7 +26,7 @@ namespace Morgengry
                 totalValue += Utility.GetValueOfMerchandise(merchandises[i]);
             }
             return totalValue;
-        }
+        }*/
 
     }
 }

@@ -18,7 +18,7 @@ namespace Morgengry
         {
             return courses.Find(x => x.Name == name);
         }
-        public double GetTotalValue()
+        /*public double GetTotalValue()
         {
             double totalValue = 0;
 
@@ -27,6 +27,6 @@ namespace Morgengry
                 totalValue += Utility.GetValueOfCourse(courses[i]);
             }
             return totalValue;
-        }
+        }*/
     }
 }
