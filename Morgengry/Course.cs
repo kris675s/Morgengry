@@ -10,7 +10,7 @@ namespace Morgengry
     {
         private string name;
         private int durationInMinutes;
-        private static double courseHourValue = 875.0;
+        private static double courseHourValue = 825.0;
         public string Name
         {
             get => name;
@@ -21,7 +21,7 @@ namespace Morgengry
             get => durationInMinutes;
             set { durationInMinutes = value; }
         }
-        public static double CourseHourValue
+        public double CourseHourValue
         {
             get => courseHourValue;
             set { courseHourValue = value; }
@@ -44,7 +44,7 @@ namespace Morgengry
         }
         public override string ToString()
         {
-            return ("Name: " + name + ", Duration in Minutes: " + durationInMinutes);
+            return ("Name: " + name + ", Duration in Minutes: " + durationInMinutes +", Pris pr påbegyndt time: "+ courseHourValue);
         }
     }
 }

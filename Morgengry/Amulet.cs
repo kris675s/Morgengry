@@ -58,18 +58,18 @@ namespace Morgengry
             set { quality = value; }
         }
 
-        public static double LowQualityValue
+        public double LowQualityValue
         {
             get => lowQualityValue;
             set { lowQualityValue = value; }
         }
 
-        public static double MediumQualityValue
+        public double MediumQualityValue
         {
             get => mediumQualityValue;
             set { mediumQualityValue = value; }
         }
-        public static double HighQualityValue
+        public double HighQualityValue
         {
             get => highQualityValue;
             set { highQualityValue = value; }

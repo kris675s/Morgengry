@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    interface IValuable
+    public interface IValuable
     {
         double GetValue();
     }
