@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Book : Merchandise, IValuable
+    public class Book : Merchandise
     {
         private string title;
         private double price;
@@ -34,7 +34,7 @@ namespace Morgengry
 
         }
 
-        public double GetValue()
+        public override double GetValue()
         {
             double price = 0;
             price = Price;

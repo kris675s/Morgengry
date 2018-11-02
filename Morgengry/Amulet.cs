@@ -13,7 +13,7 @@ namespace Morgengry
     */
     public enum Level { low, medium, high }
 
-    public class Amulet : Merchandise, IValuable
+    public class Amulet : Merchandise
 
     /*
     for at lave et mellemled hvor vi sikre at man ikke piller ved amulet classens metoder
@@ -33,7 +33,7 @@ namespace Morgengry
             set { design = value; }
         }
 
-        public double GetValue()
+        public override double GetValue()
         {
             double price = 0;
             if (Quality == Level.low)

@@ -6,12 +6,33 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class ValuableRepository
+    public class ValuableRepository
     {
         private List<IValuable> valueables = new List<IValuable>();
 
-        public AddValuable(valuables);
-        public string GetValuable; IValuable
+        public void AddValuable(IValuable valueable)
+        {
+            valueables.Add(valueable);
+        }
+        public IValuable GetValuable(string id)
+        {
+            IValuable result = null;
+            foreach (IValuable valueable in valueables)
+            {
+                if (valueable is Merchandise merchandise)
+                {
+                    if (merchandise.ItemId.Equals(id)) result = merchandise;
+                    return result;
+                }
+                else if (valueable is Course course)
+                {
+                    if (course.Name.Equals(id)) result = course;
+                    return result;
+                }
+            }
+            return result;
+        }
+            
         public double GetTotalValue()
         {
             double totalValue = 0;
@@ -29,12 +50,12 @@ namespace Morgengry
                 {
                     totalValue += amulet.GetValue();
                 }
-
             }
             return totalValue;
         }
-        public int Count;
-        
-
+        public int Count()
+        {
+            return valueables.Count;
+        }
     }
 }

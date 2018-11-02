@@ -16,7 +16,6 @@ namespace Morgengry
             get => name;
             set { name = value; }
         }
-
         public int DurationInMinutes
         {
             get => durationInMinutes;
@@ -27,7 +26,6 @@ namespace Morgengry
             get => courseHourValue;
             set { courseHourValue = value; }
         }
-
         public double GetValue()
         {
              double DurMin = DurationInMinutes;
@@ -35,7 +33,6 @@ namespace Morgengry
              double Price = hoursInitialized * CourseHourValue;
              return Price;
         }
-
         public Course(string name, int durationInMinutes)
         {
             Name = name;
@@ -45,7 +42,6 @@ namespace Morgengry
         {
 
         }
-
         public override string ToString()
         {
             return ("Name: " + name + ", Duration in Minutes: " + durationInMinutes);
