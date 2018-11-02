@@ -12,7 +12,16 @@ namespace Morgengry
 
         public AddValuable(valuables);
         public string GetValuable : IValuable;
-        public double GetTotalValue;
+        public double GetTotalValue()
+        {
+            double totalValue = 0;
+            for (int i = 0; i < valueables.Count; i++)
+            {
+                if (valueables == Course course)
+                totalValue += IValuable.GetValue(valueables[i]);
+            }
+            return totalValue;
+        }
         public int Count;
         
 
