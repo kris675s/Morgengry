@@ -10,7 +10,7 @@ namespace Morgengry
     {
         private string name;
         private int durationInMinutes;
-        private static double courseHourValue = 825.0;
+        private double courseHourValue = 825.0;
         public string Name
         {
             get => name;
